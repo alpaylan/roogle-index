@@ -6,7 +6,7 @@ const LIBSTD: [&str; 3] = ["std", "core", "alloc"];
 
 fn main() -> Result<()> {
     Command::new("./x.py")
-        .args(&["doc", "library/std"])
+        .args(&["doc", "library"])
         .status()
         .context("failed to index `set:libstd`")?;
 
